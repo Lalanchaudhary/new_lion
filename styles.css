@@ -130,9 +130,8 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.78fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
-  gap: clamp(28px, 5vw, 72px);
   width: min(1220px, calc(100% - 36px));
   margin: 0 auto;
   padding-top: 96px;
@@ -140,26 +139,6 @@ a {
 
 .hero-content {
   max-width: 760px;
-}
-
-.hero-image-link {
-  display: block;
-  justify-self: end;
-  width: min(100%, 580px);
-  order: 2;
-  transition: transform 180ms ease;
-}
-
-.hero-image-link:hover {
-  transform: translateY(-4px);
-}
-
-.hero-lion {
-  display: block;
-  width: 100%;
-  max-height: min(76vh, 720px);
-  object-fit: contain;
-  filter: drop-shadow(0 28px 45px rgba(0, 0, 0, 0.38));
 }
 
 .eyebrow {
@@ -673,23 +652,12 @@ textarea {
 
   .hero-layout {
     grid-template-columns: 1fr;
-    gap: 24px;
     width: calc(100% - 36px);
     padding-top: 96px;
   }
 
   .hero-content {
     width: 100%;
-  }
-
-  .hero-image-link {
-    justify-self: center;
-    width: min(100%, 430px);
-    order: -1;
-  }
-
-  .hero-lion {
-    max-height: 46vh;
   }
 
   h1 {
