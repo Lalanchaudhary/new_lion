@@ -19,3 +19,10 @@ document.querySelector(".contact-form").addEventListener("submit", (event) => {
   button.textContent = "Inquiry Sent";
   button.disabled = true;
 });
+
+const lionPopup = document.querySelector(".lion-popup");
+const lionPopupClose = document.querySelector(".lion-popup-close");
+
+lionPopupClose.addEventListener("click", () => {
+  lionPopup.classList.add("is-hidden");
+});

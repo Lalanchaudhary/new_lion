@@ -541,6 +541,54 @@ cite {
   transform: translateY(-2px);
 }
 
+.lion-popup {
+  position: fixed;
+  right: 22px;
+  bottom: 96px;
+  z-index: 40;
+  width: min(360px, calc(100vw - 32px));
+  padding: 10px;
+  border: 1px solid rgba(16, 19, 24, 0.12);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 24px 60px rgba(16, 19, 24, 0.24);
+}
+
+.lion-popup.is-hidden {
+  display: none;
+}
+
+.lion-popup-link {
+  display: block;
+}
+
+.lion-popup img {
+  display: block;
+  width: 100%;
+  max-height: min(520px, 72vh);
+  object-fit: contain;
+  border-radius: 6px;
+  background: var(--paper);
+}
+
+.lion-popup-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(16, 19, 24, 0.2);
+}
+
 .contact-form {
   display: grid;
   gap: 16px;
@@ -677,5 +725,12 @@ textarea {
 
   .work-visual {
     height: 180px;
+  }
+
+  .lion-popup {
+    right: 16px;
+    left: 16px;
+    bottom: 88px;
+    width: auto;
   }
 }
